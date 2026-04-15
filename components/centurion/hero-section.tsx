@@ -31,7 +31,7 @@ export function HeroSection() {
           Sovereign AI Hardware
         </p>
         
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-[0.15em] font-light mb-6 text-balance">
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl tracking-[0.15em] font-light mb-6 whitespace-nowrap">
           C E N T U R I O N
         </h1>
         
