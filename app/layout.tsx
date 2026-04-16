@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -8,14 +8,14 @@ const inter = Inter({
   variable: '--font-inter'
 });
 
-const playfair = Playfair_Display({ 
+const geistMono = Geist_Mono({ 
   subsets: ["latin"],
-  variable: '--font-playfair'
+  variable: '--font-geist-mono'
 });
 
 export const metadata: Metadata = {
-  title: 'Centurion | Sovereign Intelligence',
-  description: 'The ultimate advantage is an intelligence you can actually trust. Sovereign AI hardware for elite executives.',
+  title: 'COMPUTE - AI Agents for Distributed Computing',
+  description: 'Deploy autonomous AI agents that execute complex tasks across distributed infrastructure. No supervision required.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -42,8 +42,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${geistMono.variable} bg-background`}>
       <body className="font-sans antialiased bg-background text-foreground">
+        <div className="noise-overlay" />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
